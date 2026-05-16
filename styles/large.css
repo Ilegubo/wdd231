@@ -1,0 +1,27 @@
+@media screen and (min-width: 600px) {
+header {
+    grid-template-columns: 24px auto;
+}
+header,nav, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#ham-btn {
+    display:none;
+}
+
+.navigation {
+    display: block;
+    border-bottom: 1px solid var(--grey);
+}
+.navigation ul {
+    display: flex;
+    padding-right: 2rem;
+}
+
+.navigation ul a {
+    border: none;
+}
+
+}

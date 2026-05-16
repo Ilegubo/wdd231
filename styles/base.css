@@ -1,0 +1,170 @@
+/* COLOR SCHEME 
+hsl(209, 47%, 14%)
+hsl(43, 41%, 72%)
+*/
+
+:root {
+    --primary-blue: hsl(209, 47%, 14%);
+    --primary-yellow: hsl(43, 41%, 72%);
+    --grey: hsl(0, 0%, 89%);
+    --gray: 0, 0%, 89%;
+    
+}
+
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+header {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px;
+    border-bottom: solid 1px var(--grey);
+    gap: 2rem;
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*==================HAMBURGER==================*/
+
+.hamburger {
+    background: none;
+    /* border: 1px solid var(--primary-blue); */
+    border: none;
+    font: var(--primary-blue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px grey;
+    color: hsl(0, 1%, 35%)
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/*===================NAV LIST===================*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    display: block;
+    padding: .4rem 1rem;
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--grey); 
+
+}
+
+.navigation li.current {
+    background-color: var(--grey);
+}
+
+.navigation li:hover {
+    background-color: var(--primary-yellow);
+}
+
+/*===================Main===================*/
+
+section h2 {
+    background-color: hsl(0, 0%, 31%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    border: 2px solid black;
+    padding: 2px;
+    text-align: center;
+    
+}
+
+section p {
+    margin: 0;
+    padding: 10px;
+}
+
+section {
+    margin: 12px;
+    background-color: var(--grey);
+    min-height: 140px;
+}
+
+section.profile-photo  {
+    text-align: center;
+}
+section.profile-photo img  {
+    max-width: 95%;
+    border-radius: 6px;
+    margin: .6rem;
+}
+
+/*===========Web Certificate Courses===========*/
+.course-requirements {
+    background: white;
+    text-align: center;
+}
+
+.all, .cse, .wdd {
+    margin: 12px;
+    min-width: 50px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 4px 4px 4px hsla(0, 0%, 38%, .4);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--primary-yellow);
+}
+
+button.active:hover {
+    background-color: var(--primary-blue);
+    box-shadow: none;
+}
+
+.active {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/*===================Footer===================*/
