@@ -148,4 +148,4 @@ wdd.addEventListener('click', () => {
 
 const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
 
-document.querySelectorAll("img").setAttribute("loading", "lazy");
+document.querySelectorAll("img").forEach(img => { img.setAttribute("loading", "lazy")});
