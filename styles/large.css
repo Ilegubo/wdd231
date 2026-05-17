@@ -24,4 +24,12 @@ header,nav, main, footer {
     border: none;
 }
 
+.sections {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+}
+.course-requirements {
+    grid-column: 1/3;
+}
+
 }
