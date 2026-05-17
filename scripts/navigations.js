@@ -91,7 +91,7 @@ const courses = [
 
 function getCourses(rule) {
   const newDiv = courses
-    .filter(course => course.subject == rule)
+    .filter(course => course.subject === rule)
     .map(course => `<p>${course.subject} ${course.number}</p>`)
     .join("");
   document.getElementById("course-list").innerHTML = newDiv;
@@ -111,3 +111,15 @@ all.addEventListener('click', () => {
     })
     document.getElementById("course-list").innerHTML = container;
 })
+
+cse.addEventListener('click', () => {
+    container = "";
+    getCourses("CSE");
+});
+wdd.addEventListener('click', () => {
+    container = "";
+    getCourses("WDD");
+});
+
+
+const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;

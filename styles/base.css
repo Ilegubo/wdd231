@@ -168,3 +168,20 @@ button.active:hover {
 }
 
 /*===================Footer===================*/
+
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+#info {
+    background-color: var(--grey);
+    margin: 0;
+    padding: 6px;
+    
+}
