@@ -89,41 +89,25 @@ const courses = [
     }
 ]
 
-function getCourses(rule){
-    const div = createElement("div")
-    courses.forEach(course => {
-        if (course.subject == rule){
-            div.appendChild(document.createElement("p").textContent = `${course.subject} ${course.number}`)
-        }
-        courseRequirements.innerHTML = div;
-    });
+function getCourses(rule) {
+  const newDiv = courses
+    .filter(course => course.subject == rule)
+    .map(course => `<p>${course.subject} ${course.number}</p>`)
+    .join("");
+  document.getElementById("course-list").innerHTML = newDiv;
 }
 
 const courseRequirements = document.getElementById("course-requirements");
-const all = document.getElementById("all");
-const cse = document.getElementById("cse");
-const wdd = document.getElementById("wdd");
+const all = document.getElementById("ALL");
+const cse = document.getElementById("CSE");
+const wdd = document.getElementById("WDD");
 
-all.addEventListener('click',() => {
-    all.classList.toggle("active");
-    cse.classList.remove("active");
-    wdd.classList.remove("active");
-    newDiv = document.createElement("div");
+
+all.addEventListener('click', () => {
+    container = "";
     courses.forEach(course => {
-        div.appendChild(document.createElement("p").textContent = `${course.subject} ${course.number}`);
-    });
-    courseRequirements.innerHTML = div;
-});
+    container += `<p>${course.subject} ${course.number}`;
 
-cse.addEventListener('click', () => {
-    cse.classList.toggle("active");
-    all.classList.remove("active");
-    wdd.classList.remove("active");
-    getCourses("cse");
-});
-wdd.addEventListener('click', () => {
-    wdd.classList.toggle("active");
-    all.classList.remove("active")
-    cse.classList.remove("active")
-    getCourses("wdd");
-});
+    })
+    document.getElementById("course-list").innerHTML = container;
+})
