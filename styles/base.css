@@ -132,7 +132,6 @@ section.profile-photo  {
 section.profile-photo img  {
     max-width: 65%;
     height: auto;
-    height: auto;
     border-radius: 6px;
     margin: .6rem;
 }
@@ -186,5 +185,4 @@ footer {
     margin: 0;
     padding: 6px;
     font-weight: 700;
-    line-height: ;
 }
