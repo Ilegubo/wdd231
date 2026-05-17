@@ -1,4 +1,4 @@
-/* COLOR SCHEME 
+/* COLOR SCHEME
 hsl(209, 47%, 14%)
 hsl(43, 41%, 72%)
 */
@@ -132,6 +132,7 @@ section.profile-photo  {
 }
 section.profile-photo img  {
     max-width: 95%;
+    height: auto;
     border-radius: 6px;
     margin: .6rem;
 }
@@ -158,11 +159,11 @@ button:hover {
 }
 
 button.active:hover {
-    background-color: var(--primary-blue);
+    border-bottom: 1px solid red;
     box-shadow: none;
 }
 
-.active {
+button.active {
     background-color: var(--primary-blue);
     color: white;
 }
@@ -183,5 +184,5 @@ footer {
     background-color: var(--grey);
     margin: 0;
     padding: 6px;
-    
+
 }

@@ -90,11 +90,24 @@ const courses = [
 ]
 
 function getCourses(rule) {
-  const newDiv = courses
-    .filter(course => course.subject === rule)
-    .map(course => `<p>${course.subject} ${course.number}</p>`)
-    .join("");
-  document.getElementById("course-list").innerHTML = newDiv;
+    //Fixed: Removed curly braces for implicit returns
+    const filteredCourses = courses.filter(course => course.subject === rule);
+
+    //Fixed: Removed curly braces for implicit returns
+    const container = filteredCourses
+        .map(course => `<p>${course.subject} ${course.number}</p>`)
+        .join("");
+    
+    document.getElementById("course-list").innerHTML = container;
+
+    //Variable name now matches ('sum')
+    const credits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    
+    //Fixed: Separate element creation from text assignment
+    const creditsContainer = document.createElement("p");
+    creditsContainer.textContent = `The total credits for course listed above is ${credits}`;
+    
+    document.getElementById("course-list").appendChild(creditsContainer);
 }
 
 const courseRequirements = document.getElementById("course-requirements");
@@ -105,21 +118,34 @@ const wdd = document.getElementById("WDD");
 
 all.addEventListener('click', () => {
     container = "";
+    var credits = 0;
     courses.forEach(course => {
     container += `<p>${course.subject} ${course.number}`;
-
+    credits += course.credits;
     })
+    container += `<p>The total credits for courses listed above is ${credits}</p>`;
     document.getElementById("course-list").innerHTML = container;
+    all.classList.toggle("active");
+    cse.classList.remove("active");
+    wdd.classList.remove("active");
 })
 
 cse.addEventListener('click', () => {
-    container = "";
+    cse.classList.toggle("active");
+    all.classList.remove("active");
+    wdd.classList.remove("active");
+    document.getElementById("course-list").textContent = "";
     getCourses("CSE");
 });
 wdd.addEventListener('click', () => {
-    container = "";
+    wdd.classList.add("active");
+    all.classList.remove("active");
+    cse.classList.remove("active");
+    document.getElementById("course-list").textContent = "";
     getCourses("WDD");
 });
 
 
 const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
+
+document.querySelectorAll("img").setAttribute("loading", "lazy");
