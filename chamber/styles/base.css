@@ -1,0 +1,124 @@
+:root {
+    --primary-color: hsl(240, 41%, 28%);
+    --secondary-color: hsl(320, 17%, 17%);
+    --grey: hsl(0, 0%, 89%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 90%;
+    margin: 10px auto;
+    padding: 2px 10px;
+    border-radius: 6px;
+    max-width: 580px;
+}
+
+header, footer {
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid red;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header span {
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header img {
+    padding-top: 55%;
+    border-radius: 30%;
+}
+
+#menu {
+    display: none;
+}
+
+#nav-button {
+    border-radius: 6px;
+    margin: 0 2px;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#nav-button::before {
+    content: "\2630";
+    color: var(--primary-color);
+    font-size: 25px;
+}
+#nav-button.active::before {
+    content: "\00D7";
+    color: red;
+    font-size: 40px;
+}
+
+#nav-button:hover {
+    cursor:pointer;
+}
+
+#menu.show {
+    display:flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+    position:absolute;
+    background-color: var(--secondary-color);
+    position: absolute;
+    padding: 2px;
+    margin-right: -10px;
+}
+
+#menu.show a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+#menu.show li {
+    list-style-type: none;
+}
+
+#menu.show ul {
+    font-weight: bold;
+}
+
+main {
+    min-height: 450px;
+}
+
+footer {
+    margin-bottom: 100px;
+}
+
+footer div {
+    margin-bottom: 35px;
+    line-height: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
