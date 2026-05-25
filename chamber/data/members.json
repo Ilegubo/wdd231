@@ -4,23 +4,40 @@
 	"familySize":6,
 	"visitedByBishopric":true,
 	"family":[{
-		"name":"Girl",
+		"name":"Da Costa",
 		"gender":"F",
 		"dob":"02-02-02"
 	},
 	{
-		"name":"Guy",
+		"name":"Adres",
 		"gender":"M",
 		"dob":"02-02-02"
 	},
 	{
-		"name":"Lady",
+		"name":"Leticia",
 		"gender":"F",
 		"dob":"02-02-06"
 	},
 	{
-		"name":"Boy",
+		"name":"Carlos",
 		"gender":"M",
 		"dob":"02-02-02"
-	}]
+	},
+	{
+		"name":"Beatrice",
+		"gender":"F",
+		"dob":"02-02-02"
+	},
+	{
+		"name":"Juliet",
+		"gender":"F",
+		"dob":"02-02-02"
+	},
+	{
+		"name":"Jean",
+		"gender":"F",
+		"dob":"02-02-02"
+	}
+	
+]
 }
