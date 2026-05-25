@@ -1,0 +1,26 @@
+{
+	"familyName":"Nana",
+	"dateJoined":"02-05-2026",
+	"familySize":6,
+	"visitedByBishopric":true,
+	{
+		"name":"Girl",
+		"gender":"F",
+		"dob":"02-02-02"
+	},
+	{
+		"name":"Guy",
+		"gender":"M",
+		"dob":"02-02-02"
+	},
+	{
+		"name":"Lady",
+		"gender":"F",
+		"dob":"02-02-06"
+	},
+	{
+		"name":"Boy",
+		"gender":"M",
+		"dob":"02-02-02"
+	},
+}
