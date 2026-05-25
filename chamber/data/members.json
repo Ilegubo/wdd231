@@ -5,38 +5,73 @@
 	"visitedByBishopric":true,
 	"family":[{
 		"name":"Da Costa",
-		"gender":"F",
-		"dob":"02-02-02"
+		"gender":"M",
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Father",
+		"website url":"None"
 	},
 	{
 		"name":"Adres",
 		"gender":"M",
-		"dob":"02-02-02"
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Son",
+		"website url":"None"
 	},
 	{
 		"name":"Leticia",
 		"gender":"F",
-		"dob":"02-02-06"
+		"dob":"02-02-06",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Mother",
+		"website url":"None"
 	},
 	{
 		"name":"Carlos",
 		"gender":"M",
-		"dob":"02-02-02"
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Son",
+		"website url":"None"
 	},
 	{
 		"name":"Beatrice",
 		"gender":"F",
-		"dob":"02-02-02"
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Daughter",
+		"website url":"None"
 	},
 	{
 		"name":"Juliet",
 		"gender":"F",
-		"dob":"02-02-02"
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"images/",
+		"membership level": "Daughter",
+		"website url":"None"
 	},
 	{
 		"name":"Jean",
 		"gender":"F",
-		"dob":"02-02-02"
+		"dob":"02-02-02",
+		"address":"3rd Blackthorn Street",
+		"phone":"+233 055 123 4355",
+		"image":"https://icons.getbootstrap.com/icons/twitter-x/",
+		"membership level": "Daughter",
+		"website url":"None"
 	}
 	
 ]
