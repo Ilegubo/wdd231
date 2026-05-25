@@ -36,8 +36,8 @@ header span {
     grid-template-columns: .1fr 1fr;
 }
 
-header h1 {
-    text-align: center;
+header span p {
+    text-align: right;
 }
 
 header img {
@@ -75,45 +75,20 @@ header img {
 }
 
 #menu.show {
-    display:flex;
+    display:grid;
     max-width: fit-content;
     border: 1px transparent red;
     background-color: hsl(240, 12%, 59%); 
     margin-right: 15px;
     font-weight: bold;
     font-size: 20px;
-}
-#menu.show ul {
-    margin: 0;
-    padding: 3px;
-    max-width: 40%
-}
-#menu.show ul :nth-child(0){
-    background-color: black;
-}
-#menu.show a {
-    text-decoration: none;
-    color: white;
-}
-
-#menu.show li {
-    list-style-type: none;
-    margin-bottom: 2px;
-    padding: 5px;
+    position: relative;
 }
 
 main {
-    min-height: 450px;
+    min-height: 300px;
 }
 
-footer {
-    margin-bottom: 100px;
-}
-
-footer div {
-    margin-bottom: 35px;
-    line-height: 10px;
-}
 
 .info a {
     text-decoration: none;
@@ -124,4 +99,12 @@ footer div {
     text-align: center;
     display: flex;
     justify-content: space-around;
+}
+footer {
+    margin-bottom: 100px;
+}
+
+footer div {
+    margin-bottom: 35px;
+    line-height: 10px;
 }
