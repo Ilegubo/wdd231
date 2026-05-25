@@ -13,19 +13,23 @@ header button {
     display: none;
 }
 
-header nav {
+#menu {
     display: block;
+    position: relative;
 }
 
-header nav ul {
+#menu ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    position: absolute;
+    right: 10px;
+    top: -70px;
 
 }
 
-header nav ul a {
+#menu ul a {
     text-decoration: none;
     color: white;
     border: 2px solid white;
@@ -35,5 +39,6 @@ header nav ul a {
     border-radius: 6px;
     background: var(--secondary-color)
 }
+
 }
 
