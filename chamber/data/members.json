@@ -10,7 +10,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Father",
+		"membership level": 3,
 		"website url":"None"
 	},
 	{
@@ -20,7 +20,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Son",
+		"membership level": 3,
 		"website url":"None"
 	},
 	{
@@ -30,7 +30,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Mother",
+		"membership level": 3,
 		"website url":"None"
 	},
 	{
@@ -40,7 +40,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Son",
+		"membership level": 1,
 		"website url":"None"
 	},
 	{
@@ -50,7 +50,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Daughter",
+		"membership level": 1,
 		"website url":"None"
 	},
 	{
@@ -60,7 +60,7 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"images/",
-		"membership level": "Daughter",
+		"membership level": 2,
 		"website url":"None"
 	},
 	{
@@ -70,9 +70,8 @@
 		"address":"3rd Blackthorn Street",
 		"phone":"+233 055 123 4355",
 		"image":"https://icons.getbootstrap.com/icons/twitter-x/",
-		"membership level": "Daughter",
+		"membership level": 2,
 		"website url":"None"
-	}
-	
+	}	
 ]
 }

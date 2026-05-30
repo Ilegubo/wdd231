@@ -68,35 +68,12 @@ header img {
     font-size: 40px;
 }
 
-#nav-button:hover {
-    cursor:pointer;
-}
-
-#menu.show {
-    display:block;
-    max-width: fit-content;
-    border: 1px transparent red;
-    background-color: hsl(240, 12%, 59%); 
-    margin-right: 15px;
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-}
-
-#menu.show ul {
-    list-style-type: none;
-}
-#menu.show li {
-    list-style-type: none;
+#menu.active a {
     display: block;
 }
 
-#menu.show a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-
+#nav-button:hover {
+    cursor:pointer;
 }
 main {
     min-height: 150px;
