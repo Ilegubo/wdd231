@@ -257,6 +257,10 @@ h1 {
 
 .cng section {
     display: block;
-    width: 400px;
+    width: 300px;
     text-align: center;
+}
+
+main {
+    max-width: 250px;
 }
