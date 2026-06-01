@@ -73,3 +73,9 @@ async function renderBusinesses() {
 }
 
 renderBusinesses();
+
+changeView = document.querySelector("#change-view");
+changeView.addEventListener('click', ()=> {
+    classList.toggle('change');
+    
+})

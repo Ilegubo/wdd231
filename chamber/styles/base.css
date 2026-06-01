@@ -60,7 +60,7 @@ header img {
     width: 36px;
     height: 36px;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 50%);
     color: hsl(0, 1%, 35%)
 }
 
@@ -139,7 +139,7 @@ button.active:hover {
 
 button.active {
     background-color: var(--primary-blue);
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 /*===================Footer===================*/
@@ -193,4 +193,36 @@ footer div {
 
 .business-card a {
     display: block;
+}
+
+.Bweather {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+}
+
+.grid-view {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.change-view {
+    width: 5rem;;
+    background: var(--gray);
+    border: 2px transparent;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(78, 78, 83);
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-view.change  {
+    display: none;
 }
