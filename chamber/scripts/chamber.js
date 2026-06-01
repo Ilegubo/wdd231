@@ -60,7 +60,9 @@ async function renderBusinesses() {
         address.textContent = item.address;
 
         const div1 = document.createElement('div');
+        div1.classList.add('div1');
         const div2 = document.createElement('div');
+        div2.classList.add('div2');
         
         div1.append(img)
         div2.append(h3, address, url, phone)
@@ -74,8 +76,13 @@ async function renderBusinesses() {
 
 renderBusinesses();
 
-changeView = document.querySelector("#change-view");
-changeView.addEventListener('click', ()=> {
-    classList.toggle('change');
-
-})
+const changeView = document.querySelector("#change-view");
+if (changeView) {
+    changeView.addEventListener('click', () => {
+        changeView.classList.toggle('change');
+        const businesses = document.querySelector('.businesses');
+        if (businesses) {
+            businesses.classList.toggle('cng');
+        }
+    });
+}

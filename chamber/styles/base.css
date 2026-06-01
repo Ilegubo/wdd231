@@ -166,6 +166,11 @@ footer div {
     font-weight: 700;
 }
 
+.businesses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .business-img {
     display: block;
     text-align: center;
@@ -220,9 +225,33 @@ footer div {
 
 h1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .change-view.change  {
+    background-color: var(--primary-yellow);
+    color: var(--primary-blue);
+
+}
+
+.cng img {
+    display: none;    
+}
+
+.cng {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cng .div1 {
     display: none;
+}
+
+.cng section {
+    display: block;
+    width: 400px;
+    text-align: center;
 }
