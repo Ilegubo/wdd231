@@ -120,7 +120,7 @@ section p {
     padding: 10px;
 }
 
-section {
+section:not(.business-card) {
     margin: 12px;
     background-color: var(--grey);
     min-height: 140px;
@@ -180,10 +180,12 @@ footer div {
 
 .business-card {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
     text-align: center;
-    height: 70%;
+    align-items: start;
     padding-bottom: 5px;
+    background-color: var(--grey);
+    margin: 12px;
 }
 
 .business-card img {
