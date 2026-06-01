@@ -174,8 +174,7 @@ footer div {
 .business-img {
     display: block;
     text-align: center;
-    margin: 2px;
-    width: 90%;
+    width: 70%;
 }
 
 .business-card {
@@ -259,8 +258,4 @@ h1 {
     display: block;
     width: 300px;
     text-align: center;
-}
-
-main {
-    max-width: 250px;
 }
