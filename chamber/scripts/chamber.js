@@ -9,7 +9,7 @@ hamButton.addEventListener('click',() =>{
 
 //===========OBJ============
 
-const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
+// const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
 
 document.querySelectorAll("img").forEach(img => { img.setAttribute("loading", "lazy")});
 
@@ -77,5 +77,5 @@ renderBusinesses();
 changeView = document.querySelector("#change-view");
 changeView.addEventListener('click', ()=> {
     classList.toggle('change');
-    
+
 })
