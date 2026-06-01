@@ -77,6 +77,7 @@ async function renderBusinesses() {
 renderBusinesses();
 
 const changeView = document.querySelector("#change-view");
+const homeWeather = document.querySelector('.home-weather')
 if (changeView) {
     changeView.addEventListener('click', () => {
         changeView.classList.toggle('change');
@@ -84,5 +85,6 @@ if (changeView) {
         if (businesses) {
             businesses.classList.toggle('cng');
         }
+
     });
 }
