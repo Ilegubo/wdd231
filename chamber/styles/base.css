@@ -175,13 +175,15 @@ footer div {
     display: block;
     text-align: center;
     margin: 2px;
-    max-width: 70%;
-
+    width: 90%;
 }
 
 .business-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    height: 70%;
+    padding-bottom: 5px;
 }
 
 .business-card img {
@@ -209,6 +211,7 @@ footer div {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .change-view {
