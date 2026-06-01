@@ -2,91 +2,98 @@
 <html lang="en">
 
 <head>
-    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ilegubo Kofi Owusu">
+    <meta name="author" content="Ilegubo Owusu">
     <meta name="description"
-        content="Accra division of the chamber of commerce. This is the directory page.">
-    <link rel="icon"
-        href="https://github.com/Ilegubo/wdd231/blob/main/chamber/images/logo.svg">
-    <!--End of generic/browser meta tags-->
-
-    <!--Facebook-->
-    <meta property="og:title"
-        content="Accra Chamber of Commerce, division of Accra, Directory page. Ranges from startups to well established business.">
-    <meta property="og:url"
-        content="https://www.github.io/ilegubo/wdd231/chamber/directory.html">
-    <meta property="og:description"
-        content="Directory Page - Chamber of Commerce. Accra division of the Chamber of Commerce. Gives info on business running in Accra.">
-    <meta property="og:image"
-        content="https://ilegubo.github.io/wdd231/chamber/images/logo.svg">
-    <!--End of Facebook meta tags-->
-
-    <!--Links to external docs/resources-->
-    <link rel="icon" href="images/">
+        content="The directory page provides info on already existing business in the Greater Accra Region. This may include already existing contact, members and the kind of wkr they are into.">
+    <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/chamber.js" defer></script>
-    <!--End of external resources-->
-    <!--Google Font (Quicksand)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <!--End of Google font-->
+    <title>Accra Regional Chamber of Commerce</title>
 
-    <title>Directory Chamber of Commerce Accra division.</title>
+    <!--Social Media Tags-->
+    <meta property="og:title" content="Accra Regional Chamber of Commerce">
+    <meta property="og:description"
+        content="The directory page provides info on already existing business in the Greater Accra Region. This may include contact, members and the kind of work they are into.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url"
+        content="https://www.ilegubo.github.io/wdd231/index.html">
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="images/logo.svg" alt="logo" height="32" width="32"
-                loading="lazy">
-            <span>Accra CC</span>
-        </div>
-        <button id="nav-button" class="" aria-label="nav-button"></button>
+        <img src="images/logo.png" alt="home-logo" loading="lazy" width="512"
+            height="512">
+        <span>Greater Accra Regional Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"
+            aria-label="ham-burger menu icon"></button>
     </header>
-    <nav id="menu">
+    <nav class="navigation" id="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discovery.html" target="_blank">Discovery</a></li>
-            <li><a href="join.html" target="_blank">Join</a></li>
+            <li ><a href="#">Home</a></li>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Accra Chamber of Commerce</h1>
+        <section id="bg-image" class="bg-image">
+            <p>Keynote Tickets</p>            
+        </section>
+        <h1>Home</h1>
+        <div class="home-weather">
+            <section>
+                <h2>Events</h2>
+                <p>
+
+                </p>
+            </section>
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <img src="images/profile.webp" alt="profile-image">
+            </section>
+            <section id="forecast" class="forecast">
+                <h2>Weather Forecast</h2>
+
+            </section>
+        </div>
+        <div class="businesses">
+            <!-- Append Business Cards -->
+
+        </div>
     </main>
     <footer>
-        <div id="info" class="info">
-            <p><b>Accra Chamber of Commerce</b></p>
-            <p>57 Independence Avenue</p>
-            <p>Accra Ghana</p>
-            <p><a href="mailto:info@accracc.org">info@accracc.org</a></p>
-            <p><a href="tel:+2335552300">(233) 555-2300</a></p>
+        <div class="general">
+            <p><b>Accra Regional Chamber of Commerce</b></p>
+            <p><b>57 Independence Avenue</b></p>
+            <p><b>57 Accra, Mail 001</b></p>
+            <p><b>(233) 000 000</b></p>
         </div>
-        <div id="socials" class="socials">
-            <a href="https://facebook.com/ile.gubo"><img
-                    src="images/twitter.svg" alt="github" width="32" height="32"
-                    loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/ilegubo/"><img
-                    src="images/linkedin.svg" alt="LinkedIn" width="32"
-                    height="32" loading="lazy"></a>
-            <a href="https://facebook.com/ile.gubo"><img
-                    src="images/facebook.svg" alt="facebook" width="32"
-                    height="32" loading="lazy"></a>
+        <div class="social">
+            <a href="https://github.com/Ilegubo/wdd231" target="_blank"><img
+                    src="images/github.svg" width="30" height="30"
+                    alt="github"></a>
+            <a href="https://www.linkedin.com/in/ilegubo" target="_blank"><img
+                    src="images/linkedin.svg" width="30" height="30"
+                    alt="LinkedIn"></a>
+            <a href="https://facebook.com/ile.gubo" target="_blank"><img
+                    src="images/facebook.svg" alt="facebook" height="30"
+                    width="30"></a>
+            <a href="mailto:owusukilegubo@gmail.com" target="_blank"><img
+                    src="images/microsoft-teams.svg" alt="teams" height="30"
+                    width="30"></a>
         </div>
-        <div id="my-info" class="my-info">
-            <p>WDD 231 Cass Project</p>
-            <p>Ilegubo Owusu</p>
-            <p>&copy; Accra Chamber of Commerce</p>
-            <p id="date"></p>
+        <div id="info">
+            <p id="copy">&copy; | Ilegubo Owusu | Accra-Ghana</p>
+            <p id="year"></p>
         </div>
     </footer>
-
 </body>
 
 </html>

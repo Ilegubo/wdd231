@@ -1,104 +1,196 @@
+/* COLOR SCHEME
+hsl(209, 47%, 14%)
+hsl(43, 41%, 72%)
+*/
+
 :root {
-    --primary-color: hsl(240, 41%, 28%);
-    --secondary-color: hsl(320, 17%, 17%);
+    --primary-blue: hsl(209, 47%, 14%);
+    --primary-yellow: hsl(43, 41%, 72%);
     --grey: hsl(0, 0%, 89%);
+    --gray: 0, 0%, 89%;
+    
 }
+
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
-header, nav, main, footer {
-    width: 90%;
-    margin: 10px auto;
-    padding: 2px 10px;
-    border-radius: 6px;
-    max-width: 580px;
-    min-height: 60px;
-}
-
-header, footer {
-    background: var(--primary-color);
-    color: white;
-    border: 2px solid red;
+header, main, footer {
+    margin: 0 auto;
+    max-width: 95%;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header div {
+    margin-top: 1px;
     display: grid;
-    grid-template-columns: .1fr 1fr;
-    align-items: center;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px;
+    border-bottom: solid 1px var(--grey);
+    gap: 2rem;
+    align-items: end;
 }
 
 header img {
-    /* padding-top: 55%; */
-    border-radius: 6px;
-    margin-right: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-#menu {
+/*==================HAMBURGER==================*/
+
+.hamburger {
+    background: none;
+    /* border: 1px solid var(--primary-blue); */
+    border: 2px solid transparent;
+    font: var(--primary-blue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px grey;
+    color: hsl(0, 1%, 35%)
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/*===================NAV LIST===================*/
+.navigation {
     display: none;
 }
 
-#nav-button {
-    border-radius: 6px;
-    margin: 0 2px;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-
-#nav-button::before {
-    content: "\2630";
-    color: var(--primary-color);
-    font-size: 25px;
-}
-#nav-button.active::before {
-    content: "\00D7";
-    color: red;
-    font-size: 40px;
-}
-
-#menu.active a {
+.navigation.show {
     display: block;
 }
 
-#nav-button:hover {
-    cursor:pointer;
-}
-main {
-    min-height: 150px;
-}
-
-main h1 {
-    text-align: center;
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-.info a {
+.navigation ul a {
     text-decoration: none;
+    display: block;
+    padding: .4rem 1rem;
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--grey); 
+
+}
+
+.navigation li.current {
+    background-color: var(--grey);
+}
+
+.navigation li:hover {
+    background-color: var(--primary-yellow);
+}
+
+/*===================Main===================*/
+
+section h2 {
+    background-color: hsl(0, 0%, 31%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    
+}
+
+section p {
+    margin: 0;
+    padding: 10px;
+}
+
+section {
+    margin: 12px;
+    background-color: var(--grey);
+    min-height: 140px;
+}
+
+/*===========Web Certificate Courses===========*/
+
+button:hover {
+    background-color: var(--primary-yellow);
+    cursor: pointer;
+}
+
+button.active:hover {
+    border-bottom: 5px solid var(--primary-yellow);
+}
+
+button.active {
+    background-color: var(--primary-blue);
     color: white;
 }
 
-.socials {
-    text-align: center;
+/*===================Footer===================*/
+
+.social {
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 6px;
 }
+
 footer {
-    margin-bottom: 100px;
+    text-align: center;
+    background-color: var(--grey);
 }
 
 footer div {
-    margin-bottom: 35px;
-    line-height: 10px;
+    margin: 5px 0;
+}
+
+#info {
+    margin: 0;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.business-img {
+    display: block;
+    text-align: center;
+    margin: 2px;
+    max-width: 70%;
+
+}
+
+.business-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.business-card img {
+    /* grid-column: 0/2; */
+    margin: 5px;
+    border: 2px solid hsl(0, 9%, 80%);
+    padding: 2px;
+}
+
+.business-card p, .business-card h3, a {
+    text-align: center;
+    margin: 0;
+}
+
+.business-card a {
+    display: block;
 }
