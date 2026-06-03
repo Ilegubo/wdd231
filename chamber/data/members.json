@@ -13,7 +13,7 @@
     "phone": "+233 055 000 0000",
     "url": "https://www.ghanayello.com/company/56022/EXQUISITE_WOODWORKS",
     "image": "https://www.ghanayello.com/img/gh/s/_1578056223-45-exquisite-woodworks.jpg",
-    "membershipLevel": 3
+    "membershipLevel": 2
   },
   {
     "name": "GoodNight Centre",
@@ -29,7 +29,7 @@
     "phone": "+233 055 123 000",
     "url": "https://www.ghanayello.com/company/60088/Vendo_Smart_City_Advertising",
     "image": "https://www.ghanayello.com/img/gh/h/_1771420003-65-vendo-smart-city-advertising.jpg",
-    "membershipLevel": 3
+    "membershipLevel": 2
   },{
     "name": "Vendo Smart Advertising",
     "address": "Abenlenkpe District Hospital",
@@ -43,7 +43,7 @@
     "phone": "+233 055 123 000",
     "url": "https://www.ghanayello.com/company/60088/Vendo_Smart_City_Advertising",
     "image": "https://img.magnific.com/free-photo/summer-picnic-with-fruits-food-wine_23-2151992916.jpg?size=338&ext=jpg",
-    "membershipLevel": 3
+    "membershipLevel": 1
   },
   {
     "name": "McSarpong Medical Equipment Supplies",
@@ -51,6 +51,6 @@
     "phone": "+233 055 123 4355",
     "url": "https://www.ghanayello.com/company/59572/McSARPONG_MEDICAL_EQUIPMENT_SUPPLIES",
     "image": "https://img.magnific.com/free-photo/warehouse-worker-operating-forklift-storage-facility_23-2151962537.jpg?size=338&ext=jpg",
-    "membershipLevel": 3
+    "membershipLevel": 1
   }
 ]

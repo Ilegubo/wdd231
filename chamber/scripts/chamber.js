@@ -88,3 +88,16 @@ if (changeView) {
 
     });
 }
+
+const spotlight = document.querySelector('spotlight');
+
+
+const apiKey = "7c26a1bc63ac639c950056e0f8dd59a9";
+const lat = "40.00749517532001";
+const long = "-105.29457021873681";
+const url = `//api.openweathermap.org/data/4.0/onecall/current?lat=${lat}&lon=${lon}&appid=${apiKey}`
+
+https://api.openweathermap.org/data/3.0/onecall/current?lat=40.00749517532001&lon=-105.29457021873681&appid=7c26a1bc63ac639c950056e0f8dd59a9
+
+
+https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
