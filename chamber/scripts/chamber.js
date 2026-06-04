@@ -85,7 +85,6 @@ if (changeView) {
         if (businesses) {
             businesses.classList.toggle('cng');
         }
-
     });
 }
 
