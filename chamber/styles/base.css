@@ -266,6 +266,12 @@ h1 {
         flex-direction: column;
     }
 
+    .businesses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
     main {
         max-width: 550px;
     }
