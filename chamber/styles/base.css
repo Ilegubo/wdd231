@@ -188,10 +188,8 @@ footer div {
 }
 
 .business-card img {
-    /* grid-column: 0/2; */
-    margin: 5px;
-    border: 2px solid hsl(0, 9%, 80%);
-    padding: 2px;
+    width: 97%;
+    border: 2px solid var(--grey)    
 }
 
 .business-card p, .business-card h3, a {
@@ -270,6 +268,11 @@ h1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+
+    .businesses.cng {
+        display: flex;
+        flex-direction: column;
     }
 
     main {
