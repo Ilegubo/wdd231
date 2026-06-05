@@ -188,7 +188,7 @@ footer div {
 }
 
 .business-card img {
-    width: 97%;
+    width: 98%;
     border: 2px solid var(--grey)    
 }
 
@@ -231,9 +231,8 @@ h1 {
 }
 
 .change-view.change  {
-    background-color: var(--primary-yellow);
-    color: var(--primary-blue);
-
+    background-color: var(--primary-blue);
+    color:white;
 }
 
 .cng img {
@@ -256,6 +255,10 @@ h1 {
     display: block;
     width: 300px;
     text-align: center;
+}
+
+.change img {
+    background-color: var(--primary-blue);
 }
 
 @media screen and (max-width: 700px) {
