@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ilegubo Owusu">
     <meta name="description"
-        content="The directory page provides info on already existing business in the Greater Accra Region. This may include already existing contact, members and the kind of wkr they are into.">
+        content="The home introduces you to the Greater Accra Regional Chamber of Commerce.">
     <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/apiCall.mjs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +22,7 @@
     <!--Social Media Tags-->
     <meta property="og:title" content="Accra Regional Chamber of Commerce">
     <meta property="og:description"
-        content="The directory page provides info on already existing business in the Greater Accra Region.">
+        content="The home page introduces you the Greater Accra Regional Chamber of Commerce Page">
     <meta property="og:image"
         content="https://ilegubo.github.io/wdd231/images/logo.png">
     <meta property="og:url"
@@ -52,19 +53,14 @@
         </h1>
         <div class="home-weather">
             <div class="Bweather">
-                <section>
+                <section id="events">
                     <h2>Events</h2>
-                    <p>
-
-                    </p>
+                    
                 </section>
-                <section class="weather">
-                    <h2>Current Weather</h2>
-                    <img src="images/profile.webp" alt="profile-image">
+                <section class="weather" id="weather">
+                    
                 </section>
                 <section id="forecast" class="forecast">
-                    <h2>Weather Forecast</h2>
-
                 </section>
             </div>
             <div class="spotlight">
