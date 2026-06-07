@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/apiCall.mjs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,7 +41,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="current"><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -50,17 +51,16 @@
         <h1>
             <button id="change-view" class="change-view"
                 aria-label="change-view"><img src="images/mode.png"
-                    alt="change-mode" loading="lazy" width="32" height="32"></button>
+                    alt="change-mode" loading="lazy" width="32"
+                    height="32"></button>
         </h1>
         <div class="home-weather">
             <div class="Bweather">
-                <section>
+                <section id="events" class="events">
                     <h2>Events</h2>
-                    <p>
 
-                    </p>
                 </section>
-                <section class="weather">
+                <section class="weather" id="weather">
                     <h2>Current Weather</h2>
                 </section>
                 <section id="forecast" class="forecast">
