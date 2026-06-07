@@ -81,3 +81,9 @@ input[type=submit] {
     border: 1px solid #E07A5F;
     border-radius: 6px;  
     }
+
+    .textarea {
+        display: flex;
+        flex-direction: column;
+        
+    }
