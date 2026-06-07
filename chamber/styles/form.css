@@ -8,6 +8,18 @@ h1 {
   color: #3D405B;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
 form {
     margin: 1rem 2%;
   
@@ -67,17 +79,6 @@ form {
     padding: 0 1rem;
     border: 1px solid #E07A5F;
     border-radius: 6px;
-  }
+  
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    width: 80%;
-    margin: 0 auto;
 }
