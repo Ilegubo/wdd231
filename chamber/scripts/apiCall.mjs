@@ -54,8 +54,3 @@ async function apiFetch(){
 }
 
 apiFetch();
-
-
-// current temperature
-// current weather description
-// temperature forecast
