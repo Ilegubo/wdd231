@@ -68,15 +68,16 @@ form {
     border: 1px solid #E07A5F;
     border-radius: 6px;
   }
+}
 
-  main {
+main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
+}
 
-  body {
-    max-width: 500px;
+body {
+    width: 80%;
     margin: 0 auto;
-  }
+}
