@@ -172,8 +172,9 @@ footer div {
 }
 
 .business-img {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
     width: 70%;
 }
 
@@ -261,6 +262,25 @@ h1 {
     background-color: var(--primary-blue);
 }
 
+.bg-image img {
+    width: 865px;  
+    height: 400px;
+    border: 2px solid black;
+}
+
+.bg-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spotlight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+
+/*===========================Custom Small===========================*/
 @media screen and (max-width: 700px) {
     .Bweather {
         display: flex;

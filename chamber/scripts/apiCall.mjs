@@ -22,25 +22,25 @@ async function apiFetch(){
             const data = await response.json();
             document.getElementById('events').innerHTML = `
             <h2>Events</h2>
-            <p>Main: <b>${data.list[0].weather[0].main}</b></p>
+            <p>Main: &emsp; &emsp;&ensp; <b>${data.list[0].weather[0].main}</b></p>
             <p>Description: <b>${data.list[0].weather[0].description}</b></p>
             `;
             document.getElementById('weather').innerHTML = `
             <h2>Current Weather</h2>
-            <p>Temp: ${data.list[0].main.temp} &deg;C</p>
-            <p>Feels Like: ${data.list[0].main.feels_like} &deg;C</p>
-            <p>Pressure: ${data.list[0].main.pressure} hPa</p>
+            <p>Temp: &emsp; &nbsp; &emsp;<b>${data.list[0].main.temp} &deg;C </b></p>
+            <p>Feels Like: &emsp;<b>${data.list[0].main.feels_like} &deg;C </b></p>
+            <p>Pressure: &ensp;&emsp;<b>${data.list[0].main.pressure} hPa </b></p>
             `;
             document.getElementById('forecast').innerHTML = `
             <h2>Weather Forecast</h2>
             <div class="first-day" id="first-day">
-            <p>${ new Date(data.list[0].dt*1000).toDateString()}: <b>Temp</b>: ${data.list[0].main.temp} &deg;C</p>            
+            <p>${ new Date(data.list[0].dt*1000).toDateString()}: <b>&nbsp;Temp</b>: ${data.list[0].main.temp} &deg;C</p>            
             </div>
             <div class="second-day" id="second-day">
             <p>${ new Date(data.list[5].dt*1000).toDateString()}: <b>Temp</b>: ${data.list[5].main.temp} &deg;C</p>            
             </div>
             <div class="second-day" id="second-day">
-            <p>${ new Date(data.list[10].dt*1000).toDateString()}: <b>Temp</b>: ${data.list[10].main.temp} &deg;C</p>            
+            <p>${ new Date(data.list[12].dt*1000).toDateString()}: <b>Temp</b>: ${data.list[12].main.temp} &deg;C</p>            
             </div>
             
             `

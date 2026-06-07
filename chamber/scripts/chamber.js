@@ -88,6 +88,22 @@ if (changeView) {
     });
 }
 
-document.querySelector('.spotlight').innerHTML = `
+async function randomSpotlight(){
+    const data = await fetch('data/members.json');
+    if(data.ok){
+        return data.json;
+    }
+    else{
+        console.log("Error occured while loading spotlight of gold/silver members")
+    }
+    const first, second, third;
     
+}
+
+document.querySelector('.spotlight').innerHTML = `
+    <section id="first-spot" class="first-spot">
+    <h1></h1>
+    </section>
+    <section id="second-spot" class="second-spot"></section>
+    <section id="third-spot" class="third-spot"></section>
 `;
