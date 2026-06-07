@@ -10,6 +10,7 @@
     <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/apicall.mjs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,30 +46,37 @@
         </ul>
     </nav>
     <main>
-        <section id="bg-image" class="bg-image">
-            <p>Keynote Tickets</p>
-        </section>
-        <h1>Join</h1>
-        <div class="home-weather">
-            <div class="Bweather">
-                <section id="events">
-                    <h2>Events</h2>
-                    
-                </section>
-                <section class="weather">
-                    <h2>Current Weather</h2>
-                    <p id="current-temperature"></p>
-                </section>
-                <section id="forecast" class="forecast">
-                    <h2>Weather Forecast</h2>
-                    
-                </section>
-            </div>
-            <div class="spotlight">
+        <h1>Join Chamber</h1>
 
-            </div>
+    <form method="GET" action="thanks.html" class="designOne">
+      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+         <label>Organizational Title<input type="text" name="organizational-title" required autocomplete="organizational-title" title="Your Organizational Title"></label>
+        
+         <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+         <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+         <label>Business/Organization Name<input type="text" name="business-name" autocomplete="business-name" title="a business name" required></label>
+        <h3>Select Ordinance</h3>
+        <label><input type="radio" name="membership-level" value="gold" >Gold</label>
+        <label><input type="radio" name="membership-level" value="silver"> Silver</label>
+        <label><input type="radio" name="membership-level" value="bronze">Bronze</label>
+        <label><input type="radio" name="membership-level" value="np">Bronze</label>
 
-        </div>
+        <label><input type="textarea" placeholder="Description of business" title="" > </label>
+        
+        <h3>Date and Location</h3>
+        <label>Date <input type="date" name="date" required></label>
+
+        <label>Location
+          <select name="location" required>
+            <option value="">None</option>
+            <option value="Payson">Payson</option>
+            <option value="Orem">Orem</option>
+            <option value="Provo City Center">Provo City Center</option>
+        </label>
+
+        <input type="submit" value="Schedule An Appointment">
+    </form>
     </main>
     <footer>
         <div class="general">
