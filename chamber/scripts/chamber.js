@@ -1,6 +1,6 @@
 // select the ham-btn
-hamButton = document.querySelector("#ham-btn");
-navLink = document.querySelector("#navigation");
+const hamButton = document.querySelector("#ham-btn");
+const navLink = document.querySelector("#navigation");
 
 hamButton.addEventListener('click',() =>{
     hamButton.classList.toggle('show');
@@ -96,7 +96,7 @@ async function randomSpotlight(){
     else{
         console.log("Error occured while loading spotlight of gold/silver members")
     }
-    const first, second, third;
+    // const first, second, third;
     
 }
 

@@ -79,7 +79,6 @@ header img {
 
 .navigation.show {
     display: block;
-
 }
 
 .navigation ul {
@@ -94,7 +93,6 @@ header img {
     padding: .4rem 1rem;
     color: var(--primary-blue);
     border-bottom: 2px solid var(--grey); 
-
 }
 
 .navigation li.current {
