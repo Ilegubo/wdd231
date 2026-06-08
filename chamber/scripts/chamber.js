@@ -107,3 +107,5 @@ document.querySelector('.spotlight').innerHTML = `
     <section id="second-spot" class="second-spot"></section>
     <section id="third-spot" class="third-spot"></section>
 `;
+
+document.getElementById('timestamp').value = new Date.now();
