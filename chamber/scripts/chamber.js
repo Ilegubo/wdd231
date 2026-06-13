@@ -94,7 +94,7 @@ async function randomSpotlight(){
         return data.json;
     }
     else{
-        console.log("Error occured while loading spotlight of gold/silver members")
+        console.log("Error occurred while loading spotlight of gold/silver members")
     }
     // const first, second, third;
     
@@ -109,3 +109,8 @@ document.querySelector('.spotlight').innerHTML = `
 `;
 
 document.getElementById('timestamp').value = new Date.now();
+
+const modal = document.getElementById('cards');
+const close = document.getElementById('close');
+modal.showModal();
+close.addEventListener('click',() => modal.close());
