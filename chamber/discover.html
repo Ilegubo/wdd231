@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ilegubo Owusu">
     <meta name="description"
-        content="The home introduces you to the Greater Accra Regional Chamber of Commerce.">
+        content="The directory page provides info on already existing business in the Greater Accra Region">
     <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -17,12 +17,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <title>Accra Regional Chamber of Commerce</title>
+    <title>Accra Regional Chamber of Commerce Directory Page</title>
 
     <!--Social Media Tags-->
     <meta property="og:title" content="Accra Regional Chamber of Commerce">
     <meta property="og:description"
-        content="The home page introduces you the Greater Accra Regional Chamber of Commerce Page">
+        content="The directory page provides info on already existing business in the Greater Accra Region.">
     <meta property="og:image"
         content="https://ilegubo.github.io/wdd231/images/logo.png">
     <meta property="og:url"
@@ -39,41 +39,47 @@
     </header>
     <nav class="navigation" id="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Directory</a></li>
             <li><a href="join.html">Join</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
         <section id="bg-image" class="bg-image">
-            <!-- <p>Keynote Tickets</p> -->
-            <img src="../../images/accra-large.jpg"
-                alt="Accra Independence Square" id="accra-image">
+            <p>Keynote Tickets
+                <img src="https://ilegubo.github.io/wdd231/chamber/images/accra-large.jpg"
+                alt="Accra Independence Square" id="accra-image"></p>
         </section>
         <h1>
-            DISCOVERY
+            <button id="change-view" class="change-view"
+                aria-label="change-view"><img src="images/mode.png"
+                    alt="change-mode" loading="lazy" width="32"
+                    height="32"></button>
         </h1>
         <div class="home-weather">
             <div class="Bweather">
-                <section id="events">
+                <section id="events" class="events">
                     <h2>Events</h2>
 
                 </section>
                 <section class="weather" id="weather">
-
+                    <h2>Current Weather</h2>
                 </section>
                 <section id="forecast" class="forecast">
+                    <h2>Weather Forecast</h2>
+
                 </section>
             </div>
-            <div id="spotlight" class="spotlight">
 
-            </div>
-
+        </div>
+        <div class="businesses">
+            <!-- Append Business Cards -->
         </div>
     </main>
     <footer>
         <div class="general">
-            <p><b>Accra Regional Chamber of Commerce</b></p>
+            <p><b>G/R Chamber of Commerce</b></p>
             <p><b>57 Independence Avenue</b></p>
             <p><b>57 Accra, Mail 001</b></p>
             <p><b>(233) 000 000</b></p>
