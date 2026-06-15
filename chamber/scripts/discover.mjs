@@ -33,7 +33,12 @@ async function renderBusinesses() {
         url.href = item.url;
         url.target = '_blank';
         url.rel = 'noopener';
-        url.textContent = 'Website';
+        url.textContent = 'Learn More';
+
+        const learnMore = document.createElement('button');
+        learnMore.ariaLabel = "Learn More";
+        learnMore.id = 'learn-more'
+        learnMore.appendChild(url);
 
         const phone = document.createElement("p");
         phone.textContent = item.phone;
@@ -47,7 +52,7 @@ async function renderBusinesses() {
         div2.classList.add('div2');
         
         div1.append(img)
-        div2.append(h3, address, url, phone)
+        div2.append(h3, address, learnMore, phone)
 
 
         section.append(div1, div2);

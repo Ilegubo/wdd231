@@ -6,6 +6,7 @@ hsl(43, 41%, 72%)
 :root {
     --primary-blue: hsl(209, 47%, 14%);
     --primary-yellow: hsl(43, 41%, 72%);
+    --deep-yellow: hsl(43, 44%, 42%);
     --grey: hsl(0, 0%, 89%);
     --gray: 0, 0%, 89%;
     
@@ -305,4 +306,23 @@ h1 {
         height: auto;
         border: none;
     }
+}
+
+#learn-more {
+    border: none;
+    min-width: 6rem;
+    min-height: 2rem;
+    border-radius: 6px;
+    background-color: var(--primary-yellow);
+}
+
+#learn-more a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+#learn-more:hover {
+    background-color: var(--deep-yellow);
+    color: black;
 }
