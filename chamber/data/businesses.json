@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Tel Foods",
+    "address": "Taifa",
+    "phone": "+233 055 123 4355",
+    "url": "https://www.ghanayello.com/company/49797/BricknBuild",
+    "image": "https://t3.ftcdn.net/jpg/03/93/07/30/240_F_393073033_viJU9gUk5t0B1hlLZPKUYcB2d2vOyQPk.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Hector Foods",
+    "address": "Amanhya District Hospital",
+    "phone": "+233 055 123 000",
+    "url": "https://www.ghanayello.com/company/60088/Vendo_Smart_City_Advertising",
+    "image": "https://t4.ftcdn.net/jpg/03/77/08/95/240_F_377089596_lscYU4MAPOFJs7cx6x1yRN8cvWe31Und.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "La Boulangerié",
+    "address": "Tema Comm 22",
+    "phone": "+233 055 000 0000",
+    "url": "https://www.ghanayello.com/company/56022/EXQUISITE_WOODWORKS",
+    "image": "https://t3.ftcdn.net/jpg/20/31/03/44/240_F_2031034484_CjqKkBwfU9J17slONXJzhLDfiK2blvSx.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Le Factoria",
+    "address": "Accra Military Sanctuary",
+    "phone": "+233 055 123 123",
+    "url": "https://www.ghanayello.com/company/61382/goodnight-center",
+    "image": "https://t4.ftcdn.net/jpg/18/95/24/93/240_F_1895249335_pDMONwWHpdgVxY0SFdep5yk1QnGd3NlD.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Adiban Dziedzie",
+    "address": "Abenlenkpe District Hospital",
+    "phone": "+233 055 123 000",
+    "url": "https://www.ghanayello.com/company/60088/Vendo_Smart_City_Advertising",
+    "image": "https://t3.ftcdn.net/jpg/02/27/78/02/240_F_227780222_fnfiC24Q4hRaIjbTsXLc7hRlYrn1Oq5t.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Chop n Rest",
+    "address": "Accra District Hospital",
+    "phone": "+233 055 123 000",
+    "url": "https://www.ghanayello.com/company/60088/Vendo_Smart_City_Advertising",
+    "image": "https://img.magnific.com/free-photo/summer-picnic-with-fruits-food-wine_23-2151992916.jpg?size=338&ext=jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Chef's Corner",
+    "address": "Spintex Texpo Market",
+    "phone": "+233 055 123 4355",
+    "url": "https://www.ghanayello.com/company/59572/McSARPONG_MEDICAL_EQUIPMENT_SUPPLIES",
+    "image": "https://t3.ftcdn.net/jpg/19/50/40/64/240_F_1950406494_coE3u09NmRwZ4iPTm4tpVLqEicWB1uQ2.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "La Bar",
+    "address": "Spintex Texpo Market",
+    "phone": "+233 055 123 4355",
+    "url": "https://www.ghanayello.com/company/59572/McSARPONG_MEDICAL_EQUIPMENT_SUPPLIES",
+    "image": "https://img.magnific.com/free-photo/warehouse-worker-operating-forklift-storage-facility_23-2151962537.jpg?size=338&ext=jpg",
+    "membershipLevel": 1
+  }
+  
+]

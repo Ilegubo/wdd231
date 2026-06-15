@@ -16,9 +16,9 @@ document.querySelectorAll("img").forEach(img => { img.setAttribute("loading", "l
 
 
 
-async function getCards() {
+async function getCards(fileName) {
     try {
-        const response = await fetch('data/members.json');
+        const response = await fetch(fileName);
         if (!response.ok) {
             throw new Error(`Failed to load members: ${response.status}`);
         }
@@ -31,8 +31,8 @@ async function getCards() {
     }
 }
 
-async function renderBusinesses() {
-    const data = await getCards();
+async function renderBusinesses(fileName) {
+    const data = await getCards(fileName);
     const sectionGrid = document.querySelector('.businesses');
     if (!sectionGrid || !Array.isArray(data)) return;
 
@@ -74,7 +74,7 @@ async function renderBusinesses() {
     });
 }
 
-renderBusinesses();
+renderBusinesses('data/members.json');
 
 const changeView = document.querySelector("#change-view");
 const homeWeather = document.querySelector('.home-weather')
