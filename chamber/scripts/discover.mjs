@@ -57,3 +57,17 @@ async function renderBusinesses() {
 }
 
 renderBusinesses('data/members.json');
+
+const hamButton = document.querySelector("#ham-btn");
+const navLink = document.querySelector("#navigation");
+
+hamButton.addEventListener('click',() =>{
+    hamButton.classList.toggle('show');
+    navLink.classList.toggle('show');
+});
+
+//===========OBJ============
+
+// const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
+
+document.querySelectorAll("img").forEach(img => { img.setAttribute("loading", "lazy")});
