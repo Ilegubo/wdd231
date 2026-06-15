@@ -71,3 +71,15 @@ hamButton.addEventListener('click',() =>{
 // const date = document.getElementById("year").textContent = `Last Modified: ${document.lastModified}`;
 
 document.querySelectorAll("img").forEach(img => { img.setAttribute("loading", "lazy")});
+
+const visited = document.getElementById('visited');
+if (!localStorage.getItem('visited')){
+    localStorage.setItem('visited', 1)
+    visited.textContent = "This is your first visit to this page"
+}
+else {
+    localStorage.setItem('visited', Number(localStorage.getItem('visited')) + 1);
+    visited.textContent = `Number of times Visited: ${localStorage.getItem('visited')}`;
+}
+
+localStorage.clear();
