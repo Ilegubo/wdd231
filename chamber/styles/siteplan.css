@@ -1,0 +1,29 @@
+#wireframe img{
+    margin-top: 10px;
+    gap: 6px;
+}
+
+#wireframe div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#wireframe {
+    grid-row: 4;
+    grid-column: 1/-1;
+    height: auto;
+}
+
+#proj-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, .5fr) 1.6fr;
+}
+
+#scenarios {
+    grid-column: 2;
+    grid-row: 2/4
+}
+
