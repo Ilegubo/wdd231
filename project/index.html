@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/use-sites.js" type="module" defer></script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,7 +33,7 @@
     <header>
         <img src="images/icon.svg" alt="logo" loading="lazy" width="512"
             height="512">
-        <span><b>Tourist Visit Ghana</b></span>
+        <span><b>Tourist Visit Ghana - Home</b></span>
         <button id="ham-btn" class="hamburger"
             aria-label="ham-burger menu icon"></button>
     </header>
@@ -44,7 +45,18 @@
         </ul>
     </nav>
     <main>
-        
+        <h1>Ghana</h1>
+        <picture id="hero-img" class="hero-img">
+            <source srcset="images/hero.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+            <img src="images/hero-small.webp" alt="visit-Ghana" width="260">
+        </picture>
+        <section class="section-abt" id="intro">
+            <p>Planning on visitng Ghana? Here is guide to help you better prepare.</p>
+            <h2>Brief Intro</h2>
+            <p>Ghana is a vibrant, welcoming West African destination celebrated for its rich history, diverse landscapes, and warm hospitality. It offers tourists</p>
+        </section>
+        <section id="featured-destinations" class="card"><h2>Featured Cards</h2></section>
     </main>
     <footer>
         <div id="general">

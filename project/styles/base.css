@@ -103,23 +103,20 @@ header img {
 
 .navigation li:hover {
     background-color: var(--secondary-color);
-    font-weight: bold;
 }
 
 /*===================Main===================*/
-
-section h2 {
-    background-color: var(--background-gray);
-    color: hsl(0, 0%, 100%);
-    margin: 0;
-    padding: 2px;
-    text-align: center;
-    
+picture.hero-img {
+    margin-top: 2px;
+    display: block;
+    max-width: 98%;
 }
 
-section p {
-    margin: 0;
-    padding: 10px;
+picture.hero-img img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    
 }
 
 /*===========Web Certificate Courses===========*/
@@ -179,15 +176,3 @@ main {
 }
 
 /*===========================Custom Small===========================*/
-@media screen and (max-width: 700px) {
-
-    main {
-        max-width: 550px;
-    }
-
-    #accra-image {
-        max-width: 400px;
-        height: auto;
-        border: none;
-    }
-}

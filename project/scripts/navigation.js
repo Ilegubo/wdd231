@@ -1,3 +1,4 @@
+// |=========================NAVIGATION=========================|
 const hamButton = document.querySelector("#ham-btn");
 const navLink = document.querySelector("#navigation");
 
