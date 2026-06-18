@@ -1,0 +1,193 @@
+/* COLOR SCHEMEhsl(0, 0%, 31%)
+hsl(209, 47%, 14%)
+hsl(43, 41%, 72%)
+*/
+
+:root {
+    --primary-color: hsl(209, 47%, 14%);
+    --secondary-color: hsl(186, 53%, 47%);
+    --deep-yellow: hsl(186, 53%, 47%);
+    --grey: hsl(0, 0%, 89%);
+    --background-gray: hsl(0, 0%, 31%);
+    
+}
+
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+header {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px;
+    border-bottom: solid 1px var(--grey);
+    gap: 2rem;
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*==================HAMBURGER==================*/
+
+.hamburger {
+    background: none;
+    /* border: 1px solid var(--primary-color); */
+    border: 2px solid transparent;
+    font: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px hsl(205, 56%, 37%);
+    color: hsl(0, 1%, 35%)
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/*===================NAV LIST===================*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navigation ul a {
+    text-decoration: none;
+    display: block;
+    padding: .4rem 1rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--grey); 
+}
+
+.navigation li.current {
+    background-color: var(--grey);
+}
+
+.navigation li:hover {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*===================Main===================*/
+
+section h2 {
+    background-color: var(--background-gray);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    
+}
+
+section p {
+    margin: 0;
+    padding: 10px;
+}
+
+/*===========Web Certificate Courses===========*/
+
+button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: black;
+}
+
+button.active:hover {
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+button.active {
+    background-color: var(--primary-color);
+    color: hsl(0, 0%, 100%);
+}
+
+/*===================Footer===================*/
+
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--grey);
+    border-radius: 6px;
+}
+
+footer div {
+    margin: 5px 0;
+}
+
+footer div#general {
+    border: 2px solid transparent;
+}
+
+#info {
+    margin: 0;
+    padding: 6px;
+    font-weight: 700;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    min-height: 350px;
+}
+
+/*===========================Custom Small===========================*/
+@media screen and (max-width: 700px) {
+
+    main {
+        max-width: 550px;
+    }
+
+    #accra-image {
+        max-width: 400px;
+        height: auto;
+        border: none;
+    }
+}

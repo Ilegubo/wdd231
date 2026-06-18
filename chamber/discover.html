@@ -47,9 +47,11 @@
     </nav>
     <main>
         <section id="bg-image" class="bg-image">
-            
-                <img src="https://ilegubo.github.io/wdd231/chamber/images/accra-large.jpg"
-                alt="Accra Independence Square" id="accra-image">
+                <picture>
+                    <source srcset="https://ilegubo.github.io/wdd231/chamber/images/accra-large.jpg" media="(min-width: 600px)">
+                    <source srcset="https://ilegubo.github.io/wdd231/chamber/images/accra-small.jpg" media="(min-width: 450px)">
+                    <img src="https://ilegubo.github.io/wdd231/chamber/images/accra-super-small.jpg" alt="Accra Independence Square" width="400" height="200">
+                </picture>
                 
         </section>
         <h1>Discover</h1>
