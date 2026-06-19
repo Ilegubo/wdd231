@@ -6,10 +6,16 @@ hsl(43, 41%, 72%)
 :root {
     --primary-color: hsl(209, 47%, 14%);
     --secondary-color: hsl(186, 53%, 47%);
-    --deep-yellow: hsl(186, 53%, 47%);
+    --deep-blue: hsl(226, 60%, 46%);
     --grey: hsl(0, 0%, 89%);
-    --background-gray: hsl(0, 0%, 31%);
+    --background-gray: hsl(0, 0%, 48%);
     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -117,6 +123,46 @@ picture.hero-img img {
     display: block;
     border-radius: 6px;
     
+}
+
+/*============Featured Image Cards============*/
+#featured-destinations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+}
+
+.card {
+    border: 1px solid var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    max-width: 270px;
+    margin-bottom: 1rem;
+}
+
+section p{
+    text-align: center;
+    margin: 1rem;
+}
+
+.card p {
+    text-align: center;
+    padding: 0 6px;
+}
+
+h3 {
+    text-align: center;
+    background-color: var(--deep-blue);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
 }
 
 /*===========Web Certificate Courses===========*/
