@@ -32,4 +32,13 @@ header,nav, main, footer {
     gap: 6px;
 }
 
+/* ===================Explore IMAGE CARDS==================*/
+#destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+
+
 }

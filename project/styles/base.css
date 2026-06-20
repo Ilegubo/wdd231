@@ -199,6 +199,8 @@ footer {
     text-align: center;
     background-color: var(--grey);
     border-radius: 6px;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
 }
 
 footer div {
@@ -210,7 +212,7 @@ div#general {
 }
 
 #info {
-    margin: 0;
+    margin: 0 5px;
     padding: 6px;
     font-weight: 700;
 }

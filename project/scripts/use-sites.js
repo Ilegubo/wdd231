@@ -1,43 +1,70 @@
 // ======================FEATURED SITES======================
 import { sites } from './tourist-sites.mjs';
 
-const featuredDestinations = document.getElementById('featured-destinations');
-function getRandomSites(siteList, count) {
+function getRandomSites(siteList, count = 3) {
     if (!Array.isArray(siteList) || siteList.length === 0) return [];
     const shuffled = [...siteList].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, Math.min(count, shuffled.length));
 }
 
-async function loadFeaturedSites() {
-    return getRandomSites(sites, 3);
+export async function loadFeaturedSites(count = 3) {
+    return getRandomSites(sites, count);
 }
 
-async function renderFeaturedSites() {
-    const allCardsContainer = document.getElementById('all-cards-container');
-    const container = featuredDestinations;
-    if (!allCardsContainer || !container) return;
-
+function createHeading(text) {
     const heading = document.createElement('h2');
-    heading.textContent = 'Featured Cards';
-    allCardsContainer.prepend(heading);
+    heading.textContent = text;
+    return heading;
+}
 
-    const featuredSites = await loadFeaturedSites();
+function getRenderTargets(destinationSelector, headingContainerSelector) {
+    let destination = destinationSelector ? document.querySelector(destinationSelector) : null;
+    let headingContainer = headingContainerSelector ? document.querySelector(headingContainerSelector) : null;
+
+    if (!destination) {
+        destination = document.querySelector('#featured-destinations') || document.querySelector('#destinations');
+    }
+
+    if (!headingContainer) {
+        headingContainer = document.querySelector('#all-cards-container') || destination?.parentElement || destination;
+    }
+
+    return { destination, headingContainer };
+}
+
+export async function renderFeaturedSites({
+    destinationSelector,
+    headingContainerSelector,
+    headingText = 'Featured Cards',
+    count = 3
+} = {}) {
+    const { destination, headingContainer } = getRenderTargets(destinationSelector, headingContainerSelector);
+    if (!destination) return;
+
+    const heading = createHeading(headingText);
+    if (headingContainer) {
+        headingContainer.prepend(heading);
+    } else if (destination.parentNode) {
+        destination.parentNode.insertBefore(heading, destination);
+    }
+
+    const featuredSites = await loadFeaturedSites(count);
 
     featuredSites.forEach(item => {
         const section = document.createElement('section');
         section.classList.add('card');
-        
+
         const div1 = document.createElement('div');
-        div1.classList.add('div1');
+        div1.classList.add('div1', 'image-div');
         const img = document.createElement('img');
         img.src = item.imageUrl;
         img.alt = item.name;
         img.loading = 'lazy';
         img.classList.add('card-img');
         div1.appendChild(img);
-        
+
         const div2 = document.createElement('div');
-        div2.classList.add('div2');
+        div2.classList.add('div2', 'text-div');
         const h3 = document.createElement('h3');
         h3.textContent = item.name;
         const funfact = document.createElement('p');
@@ -49,18 +76,18 @@ async function renderFeaturedSites() {
         url.textContent = 'Learn More';
         div2.append(h3, funfact, url);
 
-        div1.classList.add('image-div');
-        div2.classList.add('text-div');
-        
         section.append(div1, div2);
-        
-        container.appendChild(section);
-        section.classList.add('card');
+        destination.appendChild(section);
     });
 }
 
-renderFeaturedSites();
+if (document.title === "Tourist Guide Visit"){
+    renderFeaturedSites();
+}
 
+else if (document.title === "Explore Tourist Sites"){
+    renderFeaturedSites({ count: sites.length });
+}
 document.querySelectorAll('img').forEach(img => {
   img.loading = 'lazy';
 });
