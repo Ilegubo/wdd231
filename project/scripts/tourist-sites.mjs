@@ -4,8 +4,7 @@ export const sites = [
         "description": "Walkway Canopy Attractions in Ghana",
         "location": "Central Region",
         "funfact": "It is one of only three locations in Africa with a canopy walkway. The bridge is suspended 130 feet in the air and was engineered by two Canadians using only timber, aluminum ladders, and safety netting.",
-        "imageUrl": "images/kakum.webp",
-        "url": "https://www.kakumnationalpark.com"
+        "imageUrl": "images/kakum.webp" 
     },
     {
         "name": "Cape Coast Castle",
