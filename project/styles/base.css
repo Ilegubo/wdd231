@@ -126,12 +126,6 @@ picture.hero-img img {
 }
 
 /*============Featured Image Cards============*/
-#featured-destinations {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 6px;
-}
 
 .card {
     border: 1px solid var(--grey);
@@ -140,7 +134,8 @@ picture.hero-img img {
     grid-template-rows: repeat(2, 1fr);
     border-radius: 6px;
     max-width: 270px;
-    margin-bottom: 1rem;
+    margin: 0 auto  1rem auto;
+
 }
 
 .image-div {

@@ -110,3 +110,7 @@ input[type=submit] {
     input[type=datetime-local] {
         display: none;
     }
+
+form {
+    margin: 1rem auto;
+}
