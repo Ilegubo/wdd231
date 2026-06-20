@@ -60,3 +60,7 @@ async function renderFeaturedSites() {
 }
 
 renderFeaturedSites();
+
+document.querySelectorAll('img').forEach(img => {
+  img.loading = 'lazy';
+});
