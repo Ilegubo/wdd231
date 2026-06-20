@@ -62,7 +62,7 @@ export const sites = [
         "funfact": "Erected by the Portuguese in 1482 as St. George's Castle, this is the oldest continuous European building in existence south of the Sahara Desert.",
         "imageUrl": "images/elmina.webp" 
     },
-    {
+    /*{
         "name": "Paga Crocodile Pond",
         "description": "Sacred Crocodile Sanctuary Tourist Complex   ",
         "location": "Paga (Upper East Region)",
@@ -104,4 +104,5 @@ export const sites = [
         "funfact": "Formed along the Pumpum River, these spectacular falls feature a three-stage cascade layout completely concealed within a lush, deep forest canopy.",
         "imageUrl": "images/kintampo.webp"
     }
+        */
 ];
