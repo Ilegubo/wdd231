@@ -25,7 +25,7 @@ async function renderFeaturedSites() {
 
     featuredSites.forEach(item => {
         const section = document.createElement('section');
-        section.classList.add('business-card');
+        section.classList.add('card');
         
         const div1 = document.createElement('div');
         div1.classList.add('div1');
@@ -48,6 +48,9 @@ async function renderFeaturedSites() {
         url.rel = 'noopener';
         url.textContent = 'Learn More';
         div2.append(h3, funfact, url);
+
+        div1.classList.add('image-div');
+        div2.classList.add('text-div');
         
         section.append(div1, div2);
         

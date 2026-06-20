@@ -135,17 +135,26 @@ picture.hero-img img {
 
 .card {
     border: 1px solid var(--grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     border-radius: 6px;
     max-width: 270px;
     margin-bottom: 1rem;
 }
 
-section p{
+.image-div {
+    overflow: hidden;
+}
+
+.card a {
+    display: block;
     text-align: center;
+}
+
+
+section p{
+    text-align: justify;
     margin: 1rem;
 }
 
@@ -201,7 +210,7 @@ footer div {
     margin: 5px 0;
 }
 
-footer div#general {
+div#general {
     border: 2px solid transparent;
 }
 

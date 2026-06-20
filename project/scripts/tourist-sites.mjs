@@ -12,7 +12,7 @@ export const sites = [
         "description": "Historical Slave Trade Fortress",
         "location": "Cape Coast",
         "funfact": "Originally built as a small timber fort by the Swedes in 1653, the structure changed hands between the Danes, Dutch, local Fetu chiefs, and the British before becoming a central hub of the transatlantic slave trade.",
-        "imageUrl": "images/cape-coast.webp" 
+        "imageUrl": "images/cape.webp" 
     },
     {
         "name": "Mole National Park",
@@ -26,7 +26,7 @@ export const sites = [
         "description": "Mausoleum of Ghana's First President",
         "location": "Accra",
         "funfact": "The striking mausoleum structure is architecturally designed to represent an upside-down sword, which in traditional Akan culture symbolizes peace and a completion of the revolutionary struggle.",
-        "imageUrl": "images/kwame-nkrumah.webp" 
+        "imageUrl": "images/nkrumah.webp" 
     },
     {
         "name": "Aburi Botanical Gardens",
@@ -40,21 +40,21 @@ export const sites = [
         "description": "Massive Public Ceremonial Grounds",
         "location": "Accra",
         "funfact": "Also known as Black Star Square, it is the second-largest city square in the entire world, trailing only behind Beijing's Tiananmen Square.",
-        "imageUrl": "images/independence-square.webp" 
+        "imageUrl": "images/accra.webp" 
     },
     {
         "name": "Wli Water Falls",
         "description": "Highest Water Cascade in West Africa",
         "location": "Hohoe (Volta Region)",
         "funfact": "Aside from being the tallest waterfall in West Africa, the sheer rock cliffs surrounding the upper falls are home to a permanent colony of thousands of wild straw-colored fruit bats.",
-        "imageUrl": "images/wli-water-falls.webp" 
+        "imageUrl": "images/wli.webp" 
     },
     {
         "name": "Larabanga Mosque",
         "description": "Ancient Mystic Mud-Brick Mosque",
         "location": "Larabanga (Savannah Region)",
         "funfact": "Known as the 'Mecca of West Africa', local legend says its foundations mysteriously appeared overnight in 1421. It houses a centuries-old holy Quran believed by locals to have dropped directly from heaven as a gift to the Imam.",
-        "imageUrl": "images/larabanga-mosque.webp" 
+        "imageUrl": "images/larabanga.webp" 
     },
     {
         "name": "Elmina Castle",
