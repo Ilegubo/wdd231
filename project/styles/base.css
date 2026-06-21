@@ -128,20 +128,24 @@ picture.hero-img img {
 /*============Featured Image Cards============*/
 
 .card {
-    border: 1px solid var(--grey);
+    border: 1px transparent rgb(114, 167, 114);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     border-radius: 6px;
     max-width: 270px;
     margin: 0 auto  1rem auto;
-
+    box-shadow: 2px 2px 2px hsla(0, 0%, 60%, .2);
 }
 
 .card img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.card .div2 {
+    background-color: var(--grey);
 }
 
 .image-div {
@@ -190,6 +194,22 @@ button.active:hover {
 button.active {
     background-color: var(--primary-color);
     color: hsl(0, 0%, 100%);
+}
+
+.to-form {
+    display: block;
+    margin: 1rem auto;
+    background-color: var(--deep-blue);
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    min-width: 35%;
+    font-size: 1.2rem;
+}
+
+.for-form {
+    text-decoration: none;
 }
 
 /*===================Footer===================*/

@@ -1,10 +1,9 @@
 :root {
-    --primary-blue: hsl(209, 47%, 14%);
-    --primary-yellow: hsl(43, 41%, 72%);
-    --grey: hsl(0, 0%, 89%);
-    --gray: 0, 0%, 89%;
+
     --blue-grey: hsl(234, 20%, 30%); 
     --orange-red: hsl(13, 68%, 63%);
+    --deep-blue: hsl(226, 60%, 46%);
+        --secondary-color: hsl(186, 53%, 47%);
 }
 *{box-sizing: border-box;}
 html {
@@ -38,8 +37,12 @@ label {
 h3 {
     font-size: .9rem;
     color: var(--orange-red);
-    margin: 1.5rem 0 .2rem 0;
+    margin: .1rem auto;
     border-bottom: 1px solid hsl(0, 0%, 93%);
+    max-width: 80%;
+    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 input[type=text],
@@ -65,7 +68,7 @@ input:required:valid{border-left-color: green;}
 
 input[type=submit] {
     text-align: center;
-    background-color: #3D405B;
+    background-color: var(--deep-blue);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -98,13 +101,15 @@ input[type=submit] {
         border-radius: 12px;
         border: 1px transparent hsl(0, 0%, 60%);
         box-shadow: 2px 1px 1px hsla(0, 0%, 60%, .2);
+        padding: 1rem;
     }
 
     input[type=submit]:hover {
         cursor: pointer;
-        background-color: var(--primary-yellow);
+        background-color: var(--deep-blue);
         color: black;
         box-shadow: 2px 2px 2px hsla(0, 0%, 60%, .2);
+        background-color: var(--secondary-color);
     }
 
     input[type=datetime-local] {

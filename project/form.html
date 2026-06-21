@@ -41,56 +41,30 @@
         <ul>
             <li><a href="index.html">Trip Planner (Before Arrival)</a></li>
             <li><a href="explore.html">Explore & Itenararies</a></li>
-            <li class="current"><a href="">On The Ground Guide</a></li>
+            <li><a href="">On The Ground Guide</a></li>
         </ul>
     </nav>
     <main>
         <form method="GET" action="thankyou.html" class="designOne">
-            <fieldset><label>First Name <input type="text" name="first" required
-                        autocomplete="given-name"
-                        title="Your First Name"></label>
-                <label>Last Name <input type="text" name="last" required
+            <fieldset>
+                <label>Name<input type="text" name="last" required
                         autocomplete="family-name"
                         title="Your Last Name"></label>
-                <label>Organization Title<input type="text"
-                        name="organization-title" required
-                        autocomplete="organization-title"
-                        title="Your Organization-title"></label>
 
                 <label>Email <input type="email" name="email" required
                         placeholder="john89@gmail.com" title="Your Email"
                         autocomplete="email"></label>
-                <label>Cell Phone <input type="tel" name="phone"
-                        autocomplete="tel" title="A Phone Number with dashes"
-                        placeholder="987-555-1234" required></label>
-                <label>Business/Organization Name<input type="text"
-                        name="business-name" autocomplete="organization"
-                        title="organization" required></label>
             </fieldset>
             <br>
             <fieldset>
-                <h2>Select Membership Level</h2>
-                <label><input type="radio" name="membership-level"
-                        value="gold">Gold</label>
-                <label><input type="radio" name="membership-level"
-                        value="silver">
-                    Silver</label>
-                <label><input type="radio" name="membership-level"
-                        value="bronze">Bronze</label>
-                <label><input type="radio" name="membership-level"
-                        value="np">Non profit</label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <h3>Describe your business</h3><label class="textarea">
+                <h3>Write your enquiry</h3><label class="textarea">
                     <textarea placeholder="Type here" name="description"
                         title="description of business" rows="6"
                         cols="30"></textarea>
                 </label>
             </fieldset>
             <br>
-            <fieldset><input type="submit" value="Join Chamber of Commerce">
-            </fieldset>
+            <input type="submit" value="Join Chamber of Commerce">
             <input type="datetime-local" name="timestamp" id="timestamp">
         </form>       
     </main>
@@ -101,7 +75,7 @@
             <p><b>57 Accra, Mail 001</b></p><br>
             <p><b>(233) 000 000</b></p><br>
         </div>
-        <p id="video"><a>Video Demostration</a></p>
+        <p id="video"><a href="#">Video Demostration</a></p>
         <div class="social">
             <a href="https://github.com/Ilegubo/wdd231" target="_blank"><img
                     src="https://ilegubo.github.io/wdd231/chamber/images/github.svg" width="30" height="30"
