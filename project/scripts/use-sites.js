@@ -74,6 +74,7 @@ export async function renderFeaturedSites({
         url.target = '_blank';
         url.rel = 'noopener';
         url.textContent = 'Learn More';
+        url.ariaLabel = `Learn more about ${item.name}`;
         div2.append(h3, funfact, url);
 
         section.append(div1, div2);
