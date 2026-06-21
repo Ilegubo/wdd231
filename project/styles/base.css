@@ -138,6 +138,12 @@ picture.hero-img img {
 
 }
 
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .image-div {
     overflow: hidden;
 }
