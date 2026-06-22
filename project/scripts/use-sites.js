@@ -38,60 +38,71 @@ export async function renderFeaturedSites({
     headingText = 'Featured Cards',
     count = 3
 } = {}) {
-    const { destination, headingContainer } = getRenderTargets(destinationSelector, headingContainerSelector);
-    if (!destination) return;
+    try {
+        const { destination, headingContainer } = getRenderTargets(destinationSelector, headingContainerSelector);
+        if (!destination) return;
 
-    const heading = createHeading(headingText);
-    if (headingContainer) {
-        headingContainer.prepend(heading);
-    } else if (destination.parentNode) {
-        destination.parentNode.insertBefore(heading, destination);
+        const heading = createHeading(headingText);
+        if (headingContainer) {
+            headingContainer.prepend(heading);
+        } else if (destination.parentNode) {
+            destination.parentNode.insertBefore(heading, destination);
+        }
+
+        const featuredSites = await loadFeaturedSites(count);
+
+        featuredSites.forEach(item => {
+            const section = document.createElement('section');
+            section.classList.add('card');
+
+            const div1 = document.createElement('div');
+            div1.classList.add('div1', 'image-div');
+            const img = document.createElement('img');
+            img.src = item.imageUrl;
+            img.alt = item.name;
+            img.loading = 'lazy';
+            img.classList.add('card-img');
+            div1.appendChild(img);
+
+            const div2 = document.createElement('div');
+            div2.classList.add('div2', 'text-div');
+            const h3 = document.createElement('h3');
+            h3.textContent = item.name;
+            const funfact = document.createElement('p');
+            const region = document.createElement('p');
+            region.textContent = `Region: ${item.region}`;
+            region.classList.add('region');
+            funfact.textContent = item.funfact;
+            const url = document.createElement('a');
+            url.href = item.url;
+            url.target = '_blank';
+            url.rel = 'noopener';
+            url.textContent = 'Learn More';
+            url.ariaLabel = `Learn more about ${item.name}`;
+            div2.append(h3, funfact, region, url);
+
+            section.append(div1, div2);
+            destination.appendChild(section);
+        });
+    } catch (error) {
+        console.error('Error rendering featured sites:', error);
     }
+}
 
-    const featuredSites = await loadFeaturedSites(count);
+try {
+    if (document.title === "Tourist Guide Visit"){
+        renderFeaturedSites();
+    } else if (document.title === "Explore Tourist Sites"){
+        renderFeaturedSites({ count: sites.length });
+    }
+} catch (error) {
+    console.error('Error initializing featured site render:', error);
+}
 
-    featuredSites.forEach(item => {
-        const section = document.createElement('section');
-        section.classList.add('card');
-
-        const div1 = document.createElement('div');
-        div1.classList.add('div1', 'image-div');
-        const img = document.createElement('img');
-        img.src = item.imageUrl;
-        img.alt = item.name;
+try {
+    document.querySelectorAll('img').forEach(img => {
         img.loading = 'lazy';
-        img.classList.add('card-img');
-        div1.appendChild(img);
-
-        const div2 = document.createElement('div');
-        div2.classList.add('div2', 'text-div');
-        const h3 = document.createElement('h3');
-        h3.textContent = item.name;
-        const funfact = document.createElement('p');
-        const region = document.createElement('p');
-        region.textContent = `Region: ${item.region}`;
-        region.classList.add('region');
-        funfact.textContent = item.funfact;
-        const url = document.createElement('a');
-        url.href = item.url;
-        url.target = '_blank';
-        url.rel = 'noopener';
-        url.textContent = 'Learn More';
-        url.ariaLabel = `Learn more about ${item.name}`;
-        div2.append(h3, funfact, region, url);
-
-        section.append(div1, div2);
-        destination.appendChild(section);
     });
+} catch (error) {
+    console.error('Error setting lazy loading to images:', error);
 }
-
-if (document.title === "Tourist Guide Visit"){
-    renderFeaturedSites();
-}
-
-else if (document.title === "Explore Tourist Sites"){
-    renderFeaturedSites({ count: sites.length });
-}
-document.querySelectorAll('img').forEach(img => {
-  img.loading = 'lazy';
-});
