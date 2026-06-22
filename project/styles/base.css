@@ -133,11 +133,11 @@ picture.hero-img img {
 .card img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .card .div2 {
     background-color: var(--grey);
+    border-radius: 6px;
 }
 
 .image-div {

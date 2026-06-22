@@ -85,7 +85,7 @@ export async function renderFeaturedSites({
             destination.appendChild(section);
         });
     } catch (error) {
-        console.error('Error rendering featured sites:', error);
+        console.error('Could not render featured sites');
     }
 }
 
@@ -96,7 +96,7 @@ try {
         renderFeaturedSites({ count: sites.length });
     }
 } catch (error) {
-    console.error('Error initializing featured site render:', error);
+    console.error('There is a bug somewhere');
 }
 
 try {
@@ -104,5 +104,5 @@ try {
         img.loading = 'lazy';
     });
 } catch (error) {
-    console.error('Error setting lazy loading to images:', error);
+    console.error('Images could not be set to lazy loading');
 }
