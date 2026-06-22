@@ -68,6 +68,9 @@ export async function renderFeaturedSites({
         const h3 = document.createElement('h3');
         h3.textContent = item.name;
         const funfact = document.createElement('p');
+        const region = document.createElement('p');
+        region.textContent = `Region: ${item.region}`;
+        region.classList.add('region');
         funfact.textContent = item.funfact;
         const url = document.createElement('a');
         url.href = item.url;
@@ -75,7 +78,7 @@ export async function renderFeaturedSites({
         url.rel = 'noopener';
         url.textContent = 'Learn More';
         url.ariaLabel = `Learn more about ${item.name}`;
-        div2.append(h3, funfact, url);
+        div2.append(h3, funfact, region, url);
 
         section.append(div1, div2);
         destination.appendChild(section);

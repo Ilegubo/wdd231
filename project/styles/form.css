@@ -119,3 +119,11 @@ input[type=submit] {
 form {
     margin: 1rem auto;
 }
+
+/* =============THANK YOU PAGE================== */
+.user-entries p {
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
